@@ -1,3 +1,5 @@
+# True to name, and only used with the BEST of security practices in mind.
+#!/bin/bash
 tdate=$(date +%F)
 echo ""
 echo "Changing the date of the root password to todays date."
