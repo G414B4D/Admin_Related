@@ -1,5 +1,10 @@
-# True to name, and only used with the BEST of security practices in mind.
-#!/bin/bash
+############################################################
+#
+# True to name, and only used with the BEST of secuirty practices in mind.
+#
+############################################################
+
+#!/usr/bin/bash
 tdate=$(date +%F)
 echo ""
 echo "Changing the date of the root password to todays date."
