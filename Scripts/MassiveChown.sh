@@ -1,4 +1,4 @@
-#! /bin/bash
+# !/bin/bash/env bash
 #Script will pass a created list of folders/directories (one per line), and set ownership of all to root:root
 
 read -p "Enter the full path to your list of folders/directories to chown: " LIST
