@@ -1,6 +1,10 @@
-#run as root and reboot to confirm changes. Then re-run the first grubby command.
+############################################################
+#
+# Run as root and reboot to confirm changes. Then re-run the first grubby command.
+#
+############################################################
 
-#!/bin/bash
+#!/usr/bin/bash
 set -e
 #Check current configuration
 grubby --info=$(grubby --default-kernel)
