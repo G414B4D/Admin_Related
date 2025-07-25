@@ -2,7 +2,7 @@
 #but if you run it as your user account (assuming you have rights) it should
 #still prompt for password and work.
 
-#Script removes the 'noexec' flag from /scratch, and restarts bot of the agents on the system.
+#Script removes the 'noexec' flag from /scratch, and restarts both of the agents on the system.
 #!/bin/bash
 echo "Remounting /scratch to remove 'noexec' and restarting services"
 echo -e "\n \n"
