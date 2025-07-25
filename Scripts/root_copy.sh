@@ -10,5 +10,5 @@ sleep 1
 rsync -avs --rsync-path="dzdo rsync" "$user@$host:$filecop" "$filedest"
 echo ""
 echo ""
-echo "File copied successfully."
+echo "If there are no errors present in the output above, your file(s) copied successfully."
 echo ""
