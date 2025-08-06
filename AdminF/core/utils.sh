@@ -15,5 +15,29 @@ run_module() {
 
 log() {
   local logfile="log/$(date +%F).log"
-  echo "[$(date '+%T')] $*" | tee -a "$logfile"
+  local timestamp="[$(date '+%T')]"
+  local message='$*'
+
+  # Color printing
+  echo -e "${GREEN}${timestamp} [INFO]${RESET} $message"
+
+  # Add to log file without color
+  echo "${timestamp} [INFO] $message" >> "$logfile"
 }
+
+warn() {
+  local logfile="logs/$(date +%F).log"
+  local timestamp="[$(date '+%T')]"
+  local message="$*"
+
+  echo -e "${YELLOW}${timestamp} [WARN]${RESET} $message"
+  echo "${timestamp} [WARN] $message" >> "$logfile"
+}
+
+error() {
+  local logfile="logs/$(date +%F).log"
+  local timestamp="[$(date '+%T')]"
+  local message="$*"
+
+  echo -e "${RED}${timestamp} [ERROR]${RESET} $message"
+  echo "${timestamp} [ERROR] $message" >> "logfile"
