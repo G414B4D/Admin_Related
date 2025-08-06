@@ -1,4 +1,3 @@
-# Will launch logic and dispatcher for the tool
 #/bin/bash
 
 source core/utils.sh
