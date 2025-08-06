@@ -3,6 +3,7 @@
 
 run_module() {
   local module_path="modules/$1"
+  
   if [[ ! -x "$module_path" ]]; then
     echo "Module not found or not executable: $module_path"
     return 1
