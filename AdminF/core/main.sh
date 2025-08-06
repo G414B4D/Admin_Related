@@ -1,5 +1,7 @@
 #/bin/bash
 
+source config/settings.conf
+source core/colors.sh
 source core/utils.sh
 source core/menu.sh
 
