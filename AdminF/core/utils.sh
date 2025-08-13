@@ -1,6 +1,11 @@
 ##
 #!/bin/bash
 
+CORE_DIR="$(cd -- "$(dirname --"${BASH_SOURCE[0]}")" && pwd)"
+
+source "$CORE_DIR/../config/settings.conf" 2>/dev/null || true
+source "$CORE_DIR/colors.sh"
+
 run_module() {
   local module_path="modules/$1"
   
