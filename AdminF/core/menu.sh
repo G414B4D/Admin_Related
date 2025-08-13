@@ -11,11 +11,11 @@ show_menu() {
   read -rp "Please select an option: " choice
 
   case "$choice" in
-    1) run_modules users/create_user.sh ;;
-    2) run_modules network/show_ip.sh ;;
-    3) run_modules packages/update_all.sh ;;
-    4) run_modules accounts/root_PW_date.sh ;;
-    5) run_modules root_copy.sh ;;
+    1) run_module users/create_user.sh ;;
+    2) run_module network/show_ip.sh ;;
+    3) run_module packages/update_all.sh ;;
+    4) run_module accounts/root_PW_date.sh ;;
+    5) run_module root_copy.sh ;;
     6) exit 0 ;;
     *) echo "Invalid choice"; sleep 1; show_menu ;;
   esac
