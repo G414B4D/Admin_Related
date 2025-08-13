@@ -41,3 +41,4 @@ error() {
 
   echo -e "${RED}${timestamp} [ERROR]${RESET} $message"
   echo "${timestamp} [ERROR] $message" >> "logfile"
+}
