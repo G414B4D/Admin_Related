@@ -2,7 +2,7 @@
 #!/bin/bash
 
 # Only define colors if enabled in settings
-if [[ "$SHOW_COLOR_OUTPUT" == "true" ]]; then
+if [[ "${SHOW_COLOR_OUTPUT:-true}" == "true" ]]; then
     RED="\033[1;31m"
     GREEN="\033[1;32m"
     YELLOW="\033[1;33m"
