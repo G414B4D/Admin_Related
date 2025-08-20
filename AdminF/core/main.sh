@@ -1,4 +1,4 @@
-#/bin/bash
+#/usr/bin/env bash
 
 source config/settings.conf
 source core/colors.sh
